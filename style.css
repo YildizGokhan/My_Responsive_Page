@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
-    font-size: 10px;
+html {
+    font-size: 7px;
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
@@ -17,25 +17,31 @@ body{
     color: white;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-p{
+p {
     padding: 1.6rem 0;
 }
 
-img{
+img {
     width: 100%;
     height: auto;
 }
 
-header{
+header {
     height: 46rem;
-    
+
 }
 
-header .bg-image{
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header .bg-image {
     position: absolute;
     background-image: url(./images/bgimage.jpg);
     background-size: cover;
@@ -46,12 +52,12 @@ header .bg-image{
     z-index: -1;
 }
 
-header h1{
+header h1 {
     padding: 12rem;
     padding-bottom: 0;
 }
 
-.btn{
+.btn {
     display: inline-block;
     background: #333;
     color: white;
@@ -60,13 +66,13 @@ header h1{
     margin: 0.5rem 0;
 }
 
-.btn:hover{
+.btn:hover {
     background: white;
     color: #333;
     transition: all 0.5s;
 }
 
-#section-a{
+#section-a {
     background-color: #eaeaea;
     color: #333;
     padding: 3.2rem;
@@ -76,11 +82,66 @@ header h1{
     padding: 2rem;
 }
 
-#section-b ul{
+#section-b ul {
     list-style: none;
 }
 
-#section-b li{
+#section-b li {
     background: #fff;
     color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.col-content {
+    padding: 1.5rem;
+}
+
+#section-c {
+    background-color: #eaeaea;
+    color: #333;
+    padding: 5rem;
+}
+
+#section-d .box {
+    padding: 5rem;
+}
+
+#section-d .box:first-child {
+    background-color: darkslategray;
+}
+
+footer {
+    padding: 4rem;
+    background: black;
+}
+
+footer a {
+    color: yellowgreen;
+}
+
+@media screen and (min-width: 800px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 11px;
+    }
+
+    #section-b li {
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    #section-b img {
+        height: 250px;
+    }
+    .box {
+        width: 50%;
+        float: left;
+    }
+    
 }
