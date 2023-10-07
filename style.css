@@ -79,3 +79,8 @@ header h1{
 #section-b ul{
     list-style: none;
 }
+
+#section-b li{
+    background: #fff;
+    color: #333;
+}
